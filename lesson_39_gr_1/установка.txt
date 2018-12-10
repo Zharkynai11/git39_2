@@ -1,0 +1,22 @@
+Перед установкой заходите в терминале в папку lesson_39_gr_1
+1. Создаёте виртуальное окружение одной из команд: 
+    * virtualenv -p python3 venv
+    * python -m virtualenv -p python3 venv. 
+   Если python3 у вас не работает, можно указать python3.6 или python3.7.
+2. Активируете виртуальное окружение: 
+    source venv/bin/activate
+3. Устанавливаете зависимости, перечисленные в файле requirements.txt: 
+    pip install -r requirements.txt
+4. Переходите в папку с кодом проекта: 
+    cd articles
+5. Мигрируете одной из команд: 
+    * ./manage.py migrate 
+    * python manage.py migrate
+   Для работы с командами manage.py вы должны находиться в той же папке, где находится manage.py, т.е. в корне исходного кода проекта.
+   Если вы находитесь в корне проекта и там есть файл manage.py, но команда ./manage.py не работает, возможно файл не имеет прав на исполнение. 
+   Сделайте его исполняемым командой:
+    chmod +x manage.py
+6. Далее можно открыть и настроить проект в PyCharm и запустить сервер из PyCharm или одной из команд:
+    * ./manage.py runserver 0:8000 
+    * python manage.py runserver 0:8000.
+
